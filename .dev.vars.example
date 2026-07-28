@@ -1,0 +1,5 @@
+# Copy to .dev.vars for local `wrangler dev` — never committed.
+# In production these are set via `wrangler secret put`, not this file.
+
+API_FOOTBALL_KEY=
+CLIENT_TOKEN=

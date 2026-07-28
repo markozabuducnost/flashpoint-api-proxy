@@ -3,21 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "description": "Minimal stateless proxy that holds the API-Football key for the Flashpoint iOS app.",
-  "type": "commonjs",
-  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "tsx watch src/index.ts"
-  },
-  "dependencies": {
-    "express": "^4.19.2",
-    "express-rate-limit": "^7.4.0"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@types/express": "^4.17.21",
-    "@types/node": "^20.14.10",
-    "tsx": "^4.19.0",
-    "typescript": "^5.5.3"
+    "@cloudflare/workers-types": "^5.20260722.1",
+    "typescript": "^5.5.3",
+    "wrangler": "^4.15.0"
   }
 }
